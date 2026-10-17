@@ -1,0 +1,31 @@
+Image ID,Filename,Fruit Domain,Class / Subset,Resolution,Channels,Bit Depth,Size (KB),Source Category,Evaluation Purpose,Relative Path
+1,l_d1_c.jpg,Lime,Diseased,1000x1000,3,8-bit (uint8),668.23,Captured / Pre-augmented Field Sample,Development & Tuning (Diseased),Lime/diseased/l_d1_c.jpg
+2,l_d2_c.jpg,Lime,Diseased,1000x1000,3,8-bit (uint8),649.05,Captured / Pre-augmented Field Sample,Development & Tuning (Diseased),Lime/diseased/l_d2_c.jpg
+3,l_h1_c.jpg,Lime,Healthy,1000x1000,3,8-bit (uint8),671.99,Captured / Pre-augmented Field Sample,Development & Tuning (Healthy),Lime/healthy/l_h1_c.jpg
+4,l_h2_c.jpg,Lime,Healthy,1000x1000,3,8-bit (uint8),642.4,Captured / Pre-augmented Field Sample,Development & Tuning (Healthy),Lime/healthy/l_h2_c.jpg
+5,l_t1_c.jpg,Lime,Test,1000x1000,3,8-bit (uint8),640.3,Captured / Pre-augmented Field Sample,Unseen Test Evaluation (Stage 6 Ground Truth),Lime/test/l_t1_c.jpg
+6,l_t2_c.jpg,Lime,Test,1000x1000,3,8-bit (uint8),623.33,Captured / Pre-augmented Field Sample,Unseen Test Evaluation (Stage 6 Ground Truth),Lime/test/l_t2_c.jpg
+7,m_d1_c.jpg,Mango,Diseased,1000x1000,3,8-bit (uint8),599.0,Captured / Pre-augmented Field Sample,Development & Tuning (Diseased),Mango/diseased/m_d1_c.jpg
+8,m_d2_c.jpg,Mango,Diseased,1000x1000,3,8-bit (uint8),585.96,Captured / Pre-augmented Field Sample,Development & Tuning (Diseased),Mango/diseased/m_d2_c.jpg
+9,m_d3.jpg,Mango,Diseased,1000x1000,3,8-bit (uint8),124.06,Standardized Domain Dataset,Development & Tuning (Diseased),Mango/diseased/m_d3.jpg
+10,m_d4.jpg,Mango,Diseased,1000x1000,3,8-bit (uint8),73.96,Standardized Domain Dataset,Development & Tuning (Diseased),Mango/diseased/m_d4.jpg
+11,m_h1_c.jpg,Mango,Healthy,1000x1000,3,8-bit (uint8),591.69,Captured / Pre-augmented Field Sample,Development & Tuning (Healthy),Mango/healthy/m_h1_c.jpg
+12,m_h2_c.jpg,Mango,Healthy,1000x1000,3,8-bit (uint8),537.54,Captured / Pre-augmented Field Sample,Development & Tuning (Healthy),Mango/healthy/m_h2_c.jpg
+13,m_h3.jpg,Mango,Healthy,1000x1000,3,8-bit (uint8),110.45,Standardized Domain Dataset,Development & Tuning (Healthy),Mango/healthy/m_h3.jpg
+14,m_h4.jpg,Mango,Healthy,1000x1000,3,8-bit (uint8),109.83,Standardized Domain Dataset,Development & Tuning (Healthy),Mango/healthy/m_h4.jpg
+15,m_t1_c.jpg,Mango,Test,1000x1000,3,8-bit (uint8),609.0,Captured / Pre-augmented Field Sample,Unseen Test Evaluation (Stage 6 Ground Truth),Mango/test/m_t1_c.jpg
+16,m_t2_c.jpg,Mango,Test,1000x1000,3,8-bit (uint8),624.27,Captured / Pre-augmented Field Sample,Unseen Test Evaluation (Stage 6 Ground Truth),Mango/test/m_t2_c.jpg
+17,m_t3.jpg,Mango,Test,1000x1000,3,8-bit (uint8),112.8,Standardized Domain Dataset,Unseen Test Evaluation (Stage 6 Ground Truth),Mango/test/m_t3.jpg
+18,m_t4.jpg,Mango,Test,1000x1000,3,8-bit (uint8),104.66,Standardized Domain Dataset,Unseen Test Evaluation (Stage 6 Ground Truth),Mango/test/m_t4.jpg
+19,j_d1_c.jpg,Jack Fruit,Diseased,1000x1000,3,8-bit (uint8),651.4,Captured / Pre-augmented Field Sample,Development & Tuning (Diseased),Jack Fruit/diseased/j_d1_c.jpg
+20,j_d2_c.jpg,Jack Fruit,Diseased,1000x1000,3,8-bit (uint8),655.46,Captured / Pre-augmented Field Sample,Development & Tuning (Diseased),Jack Fruit/diseased/j_d2_c.jpg
+21,j_d3.jpg,Jack Fruit,Diseased,1000x1000,3,8-bit (uint8),164.12,Standardized Domain Dataset,Development & Tuning (Diseased),Jack Fruit/diseased/j_d3.jpg
+22,j_d4.jpg,Jack Fruit,Diseased,1000x1000,3,8-bit (uint8),166.09,Standardized Domain Dataset,Development & Tuning (Diseased),Jack Fruit/diseased/j_d4.jpg
+23,j_h1_c.jpg,Jack Fruit,Healthy,1000x1000,3,8-bit (uint8),685.52,Captured / Pre-augmented Field Sample,Development & Tuning (Healthy),Jack Fruit/healthy/j_h1_c.jpg
+24,j_h2_c.jpg,Jack Fruit,Healthy,1000x1000,3,8-bit (uint8),665.83,Captured / Pre-augmented Field Sample,Development & Tuning (Healthy),Jack Fruit/healthy/j_h2_c.jpg
+25,j_h3.jpg,Jack Fruit,Healthy,1000x1000,3,8-bit (uint8),223.27,Standardized Domain Dataset,Development & Tuning (Healthy),Jack Fruit/healthy/j_h3.jpg
+26,j_h4.jpg,Jack Fruit,Healthy,1000x1000,3,8-bit (uint8),197.69,Standardized Domain Dataset,Development & Tuning (Healthy),Jack Fruit/healthy/j_h4.jpg
+27,j_t1_c.jpg,Jack Fruit,Test,1000x1000,3,8-bit (uint8),694.79,Captured / Pre-augmented Field Sample,Unseen Test Evaluation (Stage 6 Ground Truth),Jack Fruit/test/j_t1_c.jpg
+28,j_t2_c.jpg,Jack Fruit,Test,1000x1000,3,8-bit (uint8),648.64,Captured / Pre-augmented Field Sample,Unseen Test Evaluation (Stage 6 Ground Truth),Jack Fruit/test/j_t2_c.jpg
+29,j_t3.jpg,Jack Fruit,Test,1000x1000,3,8-bit (uint8),153.17,Standardized Domain Dataset,Unseen Test Evaluation (Stage 6 Ground Truth),Jack Fruit/test/j_t3.jpg
+30,j_t4.jpg,Jack Fruit,Test,1000x1000,3,8-bit (uint8),156.89,Standardized Domain Dataset,Unseen Test Evaluation (Stage 6 Ground Truth),Jack Fruit/test/j_t4.jpg
