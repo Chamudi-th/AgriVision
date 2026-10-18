@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { SAMPLE_IMAGES } from '../data/pipelineData';
 import { UploadCloud, Image as ImageIcon, Sparkles, AlertCircle } from 'lucide-react';
 
-export default function SampleSelector({ selectedSample, onSelectSample, onCustomUpload }) {
+export default function SampleSelector({ selectedSample, onSelectSample, onCustomUpload, onReanalyze, loading }) {
   const fileInputRef = useRef(null);
 
   const handleFileChange = (e) => {
@@ -35,13 +35,25 @@ export default function SampleSelector({ selectedSample, onSelectSample, onCusto
             Leaf Sample Selection
           </h3>
         </div>
-        <button
-          onClick={() => fileInputRef.current?.click()}
-          className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold shadow-sm transition-colors"
-        >
-          <UploadCloud className="w-3.5 h-3.5" />
-          <span>Upload Leaf Image</span>
-        </button>
+        <div className="flex items-center gap-2">
+          {onReanalyze && (
+            <button
+              onClick={onReanalyze}
+              disabled={loading}
+              className="flex items-center gap-1.5 px-3 py-1 rounded-lg border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-semibold shadow-sm transition-colors disabled:opacity-50"
+            >
+              <Sparkles className={`w-3.5 h-3.5 text-emerald-500 ${loading ? 'animate-spin' : ''}`} />
+              <span>{loading ? 'Analyzing...' : 'Re-analyze'}</span>
+            </button>
+          )}
+          <button
+            onClick={() => fileInputRef.current?.click()}
+            className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold shadow-sm transition-colors"
+          >
+            <UploadCloud className="w-3.5 h-3.5" />
+            <span>Upload Leaf Image</span>
+          </button>
+        </div>
         <input
           ref={fileInputRef}
           type="file"

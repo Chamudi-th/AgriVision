@@ -203,37 +203,6 @@ export default function App() {
 
       {/* Main Content Container */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
-        {/* Clean, Simple Banner */}
-        <div className="p-4 sm:p-5 rounded-3xl bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 text-white shadow-xl shadow-emerald-500/10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-          <div className="space-y-1">
-            <div className="flex items-center gap-2">
-              <span className="bg-white/20 px-2.5 py-0.5 rounded-full text-[10px] font-bold tracking-wider uppercase backdrop-blur-md">
-                AgriVision AI
-              </span>
-              <span className="text-emerald-100 text-xs font-semibold">
-                Tropical Fruit Foliar Analysis
-              </span>
-            </div>
-            <h1 className="text-lg sm:text-xl font-black tracking-tight">
-              Automated Leaf Disease Detection & Severity Grading
-            </h1>
-            <p className="text-xs text-emerald-100 max-w-3xl leading-relaxed">
-              Detects and localizes necrotic lesion spots, extracts morphological contours, and computes infection severity on Mango, Lime, and Jackfruit leaves.
-            </p>
-          </div>
-
-          <div className="flex items-center gap-2">
-            <button
-              onClick={executePipeline}
-              disabled={loading}
-              className="flex items-center gap-1.5 px-4 py-2 rounded-2xl bg-white text-emerald-800 text-xs font-bold hover:bg-emerald-50 transition-colors shadow-sm whitespace-nowrap disabled:opacity-50"
-            >
-              <RefreshCw className={`w-3.5 h-3.5 ${loading ? 'animate-spin' : ''}`} />
-              <span>{loading ? 'Analyzing...' : 'Re-analyze Leaf'}</span>
-            </button>
-          </div>
-        </div>
-
         {/* Error Alert */}
         {errorMessage && (
           <div className="p-3.5 rounded-2xl bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-800 text-rose-700 dark:text-rose-300 text-xs flex items-center gap-2">
@@ -251,6 +220,8 @@ export default function App() {
           onCustomUpload={(customSample) => {
             setSelectedSample(customSample);
           }}
+          onReanalyze={executePipeline}
+          loading={loading || isUpdating}
         />
 
         {/* 2. Visual AI Output & Diagnostic Summary (Side by Side) */}
